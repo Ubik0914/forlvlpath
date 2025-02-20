@@ -8,11 +8,11 @@ function output() {
 
     if (display_text == "") {
         let text = `
-${document.forms[0].elements["recent_object"].placeholder}:
+・${document.forms[0].elements["recent_object"].placeholder}
         ${document.forms[0].elements["recent_object"].value}
-${document.forms[0].elements["review_yesterday"].placeholder}:
+・${document.forms[0].elements["review_yesterday"].placeholder}
         ${document.forms[0].elements["review_yesterday"].value}
-${document.forms[0].elements["todo"].placeholder}:
+・${document.forms[0].elements["todo"].placeholder}:
         ${document.forms[0].elements["todo"].value}`;
 
         navigator.clipboard.writeText(text).then(
